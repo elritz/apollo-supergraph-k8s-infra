@@ -37,7 +37,7 @@ on:
 env:
   AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY }}
   AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_KEY }}
-  AWS_REGION: us-east-1
+  AWS_REGION: ${{ vars.AWS_REGION }}
   CLUSTER_PREFIX: ${{ secrets.CLUSTER_PREFIX }}
   APOLLO_GRAPH_ID: ${{ secrets.APOLLO_GRAPH_ID }}
 
