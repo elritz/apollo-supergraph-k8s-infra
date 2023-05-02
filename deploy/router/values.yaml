@@ -21,9 +21,7 @@ router:
   ingress:
     enabled: false
     service:
-    annotations:
-      cloud.google.com/backend-config: '{"default": "http-hc-config"}'
 ingress:
   enabled: true
-  gcp: true
+  gcp: false
   name: router
